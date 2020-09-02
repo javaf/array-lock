@@ -70,7 +70,7 @@ class Main {
   }
 
   public static void main(String[] args) {
-    lock = new ArrayLock();
+    lock = new ArrayLock(TH);
     sharedData = new double[SD];
     testThreads(false);
     testThreads(true);
