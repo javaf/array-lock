@@ -1,5 +1,3 @@
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
 import java.util.concurrent.atomic.*;
 
 // Array Queue Lock maintains a fixed-size array
@@ -29,7 +27,7 @@ import java.util.concurrent.atomic.*;
 // good fit for cache-less static memory
 // architectures.
 
-class ArrayLock implements Lock {
+class ArrayLock extends AbstractLock {
   boolean[] queue;
   int size;
   AtomicInteger tail;
@@ -76,27 +74,5 @@ class ArrayLock implements Lock {
     int s = slot.get();         // 1
     queue[s] = false;           // 1
     queue[(s+1) % size] = true; // 1, 2
-  }
-
-  @Override
-  public void lockInterruptibly() throws InterruptedException {
-    lock();
-  }
-
-  @Override
-  public boolean tryLock() {
-    lock();
-    return true;
-  }
-
-  @Override
-  public boolean tryLock(long arg0, TimeUnit arg1) throws InterruptedException {
-    lock();
-    return true;
-  }
-
-  @Override
-  public Condition newCondition() {
-    return null;
   }
 }
