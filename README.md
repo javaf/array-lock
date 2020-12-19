@@ -32,6 +32,11 @@ multiprocessors.
 
 [Tom Anderson]: https://scholar.google.com/citations?user=MYqlcPgAAAAJ&hl=en
 
+> **Course**: [Concurrent Data Structures], Monsoon 2020\
+> **Taught by**: Prof. Govindarajulu Regeti
+
+[Concurrent Data Structures]: https://github.com/iiithf/concurrent-data-structures
+
 ```java
 lock():
 1. When thread wants to access critical
