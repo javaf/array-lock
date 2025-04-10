@@ -71,3 +71,4 @@ See [ArrayLock.java] for code, [Main.java] for test, and [repl.it] for output.
 - [The performance of spin lock alternatives for shared-memory multiprocessors :: Thomas Anderson](https://ieeexplore.ieee.org/document/80120)
 
 ![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/javaf/array-lock)
+![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/moocf/array-lock.java)
